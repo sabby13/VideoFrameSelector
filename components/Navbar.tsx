@@ -27,7 +27,7 @@ export default function Navbar() {
             Docs
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/sabby13/VideoFrameSelector"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-[13px] text-[#8A8A8A] hover:text-[#0A0A0A] transition-colors"
