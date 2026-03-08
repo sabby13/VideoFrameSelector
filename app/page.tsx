@@ -80,8 +80,8 @@ export default function Home() {
       });
     } else {
       // Fallback: assume 30fps
-       const w = video.videoWidth;
-      const h = video.videoHeight;
+      const w = (video as HTMLVideoElement).videoWidth;
+       const h = (video as HTMLVideoElement).videoHeight;
       setTimeout(() => {
         const fps = 30;
         const totalFrames = Math.round(fps * duration);
