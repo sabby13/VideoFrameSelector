@@ -90,11 +90,15 @@ export default function OutputCard({
           ) : null}
         </div>
 
+
+
+ {/* emojis were present here*/} 
+ 
         {/* File info row */}
         {metadata && !isDetecting && (
           <div className="px-6 py-4 bg-[#FAFAF8] border-t border-[#E8E6E1] flex items-center gap-6 flex-wrap">
-            <InfoPill icon="📁" label="File size" value={formatBytes(metadata.fileSize)} />
-            <InfoPill icon="🎬" label="File" value={metadata.fileName} />
+            <InfoPill icon="" label="File size" value={formatBytes(metadata.fileSize)} />
+            <InfoPill icon="" label="File" value={metadata.fileName} />
           </div>
         )}
 
