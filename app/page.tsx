@@ -79,6 +79,8 @@ export default function Home() {
       });
     } else {
       // Fallback: assume 30fps
+       const w = video.videoWidth;
+      const h = video.videoHeight;
       setTimeout(() => {
         const fps = 30;
         const totalFrames = Math.round(fps * duration);
@@ -86,7 +88,7 @@ export default function Home() {
           fps,
           totalFrames,
           duration,
-          resolution: { width: video.videoWidth, height: video.videoHeight },
+          resolution: { width: w, height: h },
           fileName: file.name,
           fileSize: file.size,
         });
