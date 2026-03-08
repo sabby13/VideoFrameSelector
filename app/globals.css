@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html { -webkit-font-smoothing: antialiased; }
+body { background-color: #F9F8F6; color: #0A0A0A; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: #D0CEC9; border-radius: 99px; }
+
+.drag-active { border-color: #1A6CFF !important; background-color: #EBF2FF !important; }
+
+.shimmer {
+  background: linear-gradient(90deg, #f0efed 25%, #e8e7e4 50%, #f0efed 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-up { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.frame-card:hover .frame-dl-btn { opacity: 1; transform: translateY(0); }
+.frame-dl-btn { opacity: 0; transform: translateY(4px); transition: all 0.2s ease; }
