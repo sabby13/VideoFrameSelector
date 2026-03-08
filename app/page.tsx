@@ -39,7 +39,8 @@ export default function Home() {
     };
   }, [videoUrl]);
 
-  const detectFPS = (video: HTMLVideoElement, duration: number, file: File) => {
+  const detectFPS = (videoEl: HTMLVideoElement, duration: number, file: File) => {
+    const video = videoEl as HTMLVideoElement;
     let frameCount = 0;
     let startTime: number | null = null;
     const sampleDuration = 1.5; // sample 1.5 seconds
