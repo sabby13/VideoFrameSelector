@@ -12,7 +12,7 @@ export default function HeroSection({ hasVideo }: HeroSectionProps) {
         <div className="animate-fade-up inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#E8E6E1] bg-white mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
           <span className="text-[12px] font-medium text-[#8A8A8A] tracking-wide uppercase">
-            Browser-native · No upload required
+            Runs Locally · No server Upload
           </span>
         </div>
 
