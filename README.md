@@ -1,7 +1,7 @@
 # Video Frame Extractor
 https://video-frame-selector.vercel.app/
 
-A browser-native video frame extraction tool built with Next.js 14, React, TypeScript, and Tailwind CSS. Designed with an Apple-inspired minimal aesthetic.
+A browser-native video frame extraction tool built with Next.js 14, React, TypeScript, and Tailwind CSS.
 
 ## Features
 
@@ -36,7 +36,6 @@ video-frame-extractor/
 └── README.md
 ```
 
-## Getting Started
 
 ### Prerequisites
 
@@ -77,6 +76,7 @@ npm start
 | Frame grab  | HTML5 Canvas API                    |
 | ZIP export  | JSZip + FileSaver.js                |
 
+
 ## How FPS Detection Works
 
 1. A hidden `<video>` element is created with the uploaded file
@@ -85,11 +85,3 @@ npm start
 4. Total frames = snapped FPS × video duration
 5. Fallback: if `requestVideoFrameCallback` is not supported, assumes 30fps
 
-## Browser Compatibility
-
-| Browser | FPS Detection | Frame Extraction |
-|---------|--------------|-----------------|
-| Chrome  | ✅ Native     | ✅               |
-| Edge    | ✅ Native     | ✅               |
-| Firefox | ⚠️ Fallback  | ✅               |
-| Safari  | ✅ Native     | ✅               |
