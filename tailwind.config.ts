@@ -1,3 +1,9 @@
+// Tailwind CSS configuration for the project. 
+// It tells Tailwind where to scan for class usage (pages, components, app folders),
+// extends the default theme with custom fonts, colors, animations, and keyframes
+// to maintain a consistent design system, and allows additional plugins if needed.
+
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
