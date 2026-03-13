@@ -1,3 +1,11 @@
+// TypeScript configuration for a Next.js project.
+// This setup enables strict type checking, modern ESNext features, and DOM APIs,
+// while preventing TypeScript from emitting compiled files (Next.js handles builds).
+// It also supports JavaScript files, JSON imports, path aliases (@/*),
+// incremental compilation for faster builds, and proper module resolution
+// for modern bundlers used by Next.js.
+
+
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
