@@ -1,8 +1,8 @@
 # Video Frame Extractor
 <img width="1288" height="952" alt="image" src="https://github.com/user-attachments/assets/bd5cb979-5681-475a-8009-10f1d390cfe2" />
 
-
-To try out, click this Link:
+<br>
+To try out, click this Link:<br>
 https://video-frame-selector.vercel.app/
 
 A browser-native video frame extraction tool built with Next.js 14, React, TypeScript, and Tailwind CSS.
